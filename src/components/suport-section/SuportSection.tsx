@@ -1,18 +1,18 @@
 import { HeartHandshake, PaintbrushVertical, Store } from "lucide-react";
-import { PT_Sans_Caption } from "next/font/google"; // Importando a font
+// import { PT_Sans_Caption } from "next/font/google"; // Importando a font
 
 // Utilizando a font PT_Sans_Captian do next font google
-const ptSansCaptian = PT_Sans_Caption({
-    subsets: ['latin'],
-    weight: '700'
-})
+// const ptSansCaptian = PT_Sans_Caption({
+//     subsets: ['latin'],
+//     weight: '700'
+// })
 
 export function SuportSecion() {
     return (
         <section className="pb-8 md:py-10 bg-gray-700">
             <div className="container flex flex-col items-center gap-12">
                 {/* text-balance: serve para deixar o texto com quebras de linha mais harmoniosas e equilibradas */}
-                <h2 className={`${ptSansCaptian.className} text-balance text-center text-heading-xl text-gray-100`}>Sua loja de afiliados, simples, do jeito que deveria ser</h2>
+                <h2 className={/*`${ptSansCaptian.className}*/ "font-sans text-balance text-center text-heading-xl text-gray-100"}>Sua loja de afiliados, simples, do jeito que deveria ser</h2>
 
                 <div className="grid gap-6 md:grid-cols-3">
                     {/* Primeiro Card */}
