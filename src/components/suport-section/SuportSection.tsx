@@ -9,8 +9,10 @@ import { HeartHandshake, PaintbrushVertical, Store } from "lucide-react";
 
 export function SuportSecion() {
     return (
-        <section className="pb-8 md:py-10 bg-gray-700">
-            <div className="container flex flex-col items-center gap-12">
+        <section className="relative pb-8 md:py-10 bg-gray-700">
+            <div className="absolute inset-0 hidden md:block bg-[url('/assets/background-features.svg')] bg-cover bg-center bg-no-repeat opacity-90" />
+
+            <div className="container flex flex-col items-center gap-12 relative">
                 {/* text-balance: serve para deixar o texto com quebras de linha mais harmoniosas e equilibradas */}
                 <h2 className={/*`${ptSansCaptian.className}*/ "font-sans text-balance text-center text-heading-xl text-gray-100"}>Sua loja de afiliados, simples, do jeito que deveria ser</h2>
 
