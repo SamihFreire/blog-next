@@ -1,5 +1,6 @@
 import { Search } from "@/components/search";
 import { useRouter } from "next/router";
+import { PostCard } from "./components/post-card";
 
 export function BlogList() {
     const router = useRouter();
@@ -25,6 +26,17 @@ export function BlogList() {
             </header>
 
             {/* Listagem de posts */}
+            <PostCard
+                title="Transformando seu negocio em uma loja virtual"
+                description="Se você está buscando uma maneira simples e eficaz de vender seus produtos online, o Site..."
+                date="20/12/2024"
+                slug="/transformando"
+                image="/assets/primeiro-post.png"
+                author={{
+                    avatar: '/assets/customer-01.png',
+                    name: 'Aspen Dokidis'
+                }}
+            />
         </div>
     )
 }
